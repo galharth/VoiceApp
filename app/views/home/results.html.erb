@@ -1,0 +1,70 @@
+<html>
+<head>
+<title>Voice Search</title>
+<link href='http://fonts.googleapis.com/css?family=Orbitron' rel='stylesheet' type='text/css'>
+<style type="text/css">
+@import url(http://www.google.com/cse/api/branding.css);
+
+            #title
+            {
+            text-shadow: 1px 1px 3px #888;
+			font-family: 'Orbitron', arial, serif;             
+			}
+
+
+</style>
+
+</head>
+<body style="text-align:center;">
+
+
+<a href="file:///Users/galharth/Sites/Voice-Search/VoiceApp/app/views/results.html" style="color:black;text-decoration:none"><h1 id="title" style="margin-top:300px;"><font color="red">Voice Search</font> - the next generation of search</h1></a>
+<div class="cse-branding-bottom" style="background-color:#FFFFFF;color:#000000">
+  <div class="cse-branding-form">
+    <form action="file:///Users/galharth/Sites/Voice-Search/VoiceApp/app/views/results.html" id="cse-search-box">
+      <div>
+        <input type="hidden" name="cx" value="partner-pub-1398670281990807:t1r0973w9bo" />
+        <input type="hidden" name="cof" value="FORID:10" />
+        <input type="hidden" name="ie" value="ISO-8859-1" />
+        <input type="text" name="q"  size="31" x-webkit-speech id="q" style="              width: 800px;
+              height: 50px;
+              padding: 10px 15px;
+              font-size: 155%;
+              border-radius: 10px;
+              border: 1px solid #ccc;
+              outline: 0;"/> <br/> <br/>
+              <script type="text/javascript">
+function getParameterByName(name)
+{
+  name = name.replace(/[\[]/,"\\\[").replace(/[\]]/,"\\\]");
+  var regexS = "[\\?&]"+name+"=([^&#]*)";
+  var regex = new RegExp( regexS );
+  var results = regex.exec( window.location.href );
+  if( results == null )
+    return "";
+  else
+    return decodeURIComponent(results[1].replace(/\+/g, " "));
+}
+document.getElementById("q").value = getParameterByName("q");
+</script>
+        <input type="submit" name="sa" value="Search" style="width:200px;" /><br /><br />
+      </div>
+    </form>
+  </div>
+</div>
+
+
+
+<div id="cse-search-results"></div>
+<script type="text/javascript">
+  var googleSearchIframeName = "cse-search-results";
+  var googleSearchFormName = "cse-search-box";
+  var googleSearchFrameWidth = 800;
+  var googleSearchDomain = "www.google.com";
+  var googleSearchPath = "/cse";
+</script>
+<script type="text/javascript" src="http://www.google.com/afsonline/show_afs_search.js"></script>
+
+
+</body>
+</html>
