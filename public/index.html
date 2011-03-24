@@ -34,6 +34,13 @@
               border: 1px solid #ccc;
               outline: 0;" id="q"/> <br/> <br/>
               <script type="text/javascript">
+              var is_chrome = navigator.userAgent.toLowerCase().indexOf('chrome/11') > -1;
+
+
+if(is_chrome == false)
+{
+window.location = "nochrome.html";
+}
 function getParameterByName(name)
 {
   name = name.replace(/[\[]/,"\\\[").replace(/[\]]/,"\\\]");
